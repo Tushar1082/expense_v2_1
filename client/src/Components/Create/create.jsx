@@ -230,7 +230,7 @@ export const ExpenseProfilePopup = forwardRef((props, ref) => {
   });
   const [show_next_btn, set_show_next_btn] = useState(isGroupPage);
   const [selectedUsers, setSelectedUsers] = useState([]);
-  const [profile_img, set_profile_img] = useState("../../../public/expense_profile_pic/travel_2.webp");
+  const [profile_img, set_profile_img] = useState("/expense_profile_pic/travel_2.webp");
   const prof_img_ref = useRef();
 
   const compRef = useRef(null);
@@ -332,22 +332,22 @@ export const ExpenseProfilePopup = forwardRef((props, ref) => {
     'Shopping', 'Debt Repayment', 'Charity/Donation'
   ];
   const profile_img_collection = [
-    "../../../public/expense_profile_pic/travel_2.webp",
-    "../../../public/expense_profile_pic/travel_1.webp",
-    "../../../public/expense_profile_pic/bills_1.webp",
-    "../../../public/expense_profile_pic/bills_2.webp",
-    "../../../public/expense_profile_pic/education_1.webp",
-    "../../../public/expense_profile_pic/education_2.webp",
-    "../../../public/expense_profile_pic/entertainment_1.webp",
-    "../../../public/expense_profile_pic/entertainment_2.webp",
-    "../../../public/expense_profile_pic/food_1.webp",
-    "../../../public/expense_profile_pic/food_2.webp",
-    "../../../public/expense_profile_pic/groceries_1.webp",
-    "../../../public/expense_profile_pic/groceries_2.webp",
-    "../../../public/expense_profile_pic/medical_1.webp",
-    "../../../public/expense_profile_pic/medical_2.webp",
-    "../../../public/expense_profile_pic/shopping_1.webp",
-    "../../../public/expense_profile_pic/shopping_2.webp"
+    "/expense_profile_pic/travel_2.webp",
+    "/expense_profile_pic/travel_1.webp",
+    "/expense_profile_pic/bills_1.webp",
+    "/expense_profile_pic/bills_2.webp",
+    "/expense_profile_pic/education_1.webp",
+    "/expense_profile_pic/education_2.webp",
+    "/expense_profile_pic/entertainment_1.webp",
+    "/expense_profile_pic/entertainment_2.webp",
+    "/expense_profile_pic/food_1.webp",
+    "/expense_profile_pic/food_2.webp",
+    "/expense_profile_pic/groceries_1.webp",
+    "/expense_profile_pic/groceries_2.webp",
+    "/expense_profile_pic/medical_1.webp",
+    "/expense_profile_pic/medical_2.webp",
+    "/expense_profile_pic/shopping_1.webp",
+    "/expense_profile_pic/shopping_2.webp"
   ];
 
   useEffect(() => {
