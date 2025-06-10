@@ -47,7 +47,7 @@ const { ObjectId } = require('mongodb');
 
 app.use(express.json()); //for parsing JSON
 app.use(express.urlencoded({ extended: true })); // for URL-encoded data
-app.use(cors({ origin: ['http://localhost:5173', 'https://spendingsmart.onrender.com', 'https://spendingsmart-bf0e0.web.app'] }));
+app.use(cors({ origin: ['https://expense-v2-1.onrender.com'] }));
 app.use(helmet());
 
 // Routes
