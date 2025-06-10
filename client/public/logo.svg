@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for gradients and filters -->
+  <defs>
+    <!-- Nykaa-inspired gradient - pink to red -->
+    <linearGradient id="nykaaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FC2779;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E80071;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Subtle shadow for depth -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main background shape - square with rounded corners like Nykaa logo -->
+  <rect x="50" y="50" width="200" height="200" rx="40" fill="white" filter="url(#dropShadow)" />
+  
+  <!-- Stylized "S" for "Spending Smart" in Nykaa style -->
+  <path d="M120,90 
+           C100,90 90,105 90,120
+           C90,140 110,150 150,155
+           C190,160 210,170 210,195
+           C210,220 185,230 150,230
+           C120,230 100,220 90,210
+           M150,90 L150,70
+           M150,230 L150,250"
+        stroke="url(#nykaaGradient)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  <!-- Dollar symbol overlay -->
+  <circle cx="150" cy="160" r="15" fill="white" />
+  <text x="150" y="167" font-family="Arial, sans-serif" font-weight="bold" font-size="22" fill="url(#nykaaGradient)" text-anchor="middle">$</text>
+  
+  <!-- Text "SPENDING SMART" in Nykaa style typography -->
+  <text x="150" y="270" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#333333" text-anchor="middle">SPENDING SMART</text>
+</svg>

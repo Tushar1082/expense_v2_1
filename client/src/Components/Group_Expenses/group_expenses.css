@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+  .rdt_TableCell {
+    display: none !important; /* hide all columns on small screens */
+  }
+}

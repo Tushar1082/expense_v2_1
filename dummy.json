@@ -1,0 +1,162 @@
+{
+  "_id": {"$oid": "6839ee2548aff577cad47337"},
+  "group_id": {"$oid": "6839ee2548aff577cad47336"},
+  "expenses": [
+    {
+      "expense_id": {"$oid": "6839ee5148aff577cad47338"},
+      "name": "Dinner",
+      "category": "Food",
+      "subCategory": "Restaurants",
+      "description": "lkjhgfc",
+      "amount": 5000,
+      "paidBy": {
+        "user_id": {"$oid": "68262d4bad3a516217e2815a"},
+        "name": "Tushar Sharma"
+      },
+      "splitType": "group",
+      "splitMethod": "equal",
+      "splitDetails": [
+        {
+          "user_id": {"$oid": "6836037fa5b0518ea44a5283"},
+          "name": "John Doe",
+          "amount": 1666.67,
+          "paymentStatus": "Pending"
+        },
+        {
+          "user_id": {"$oid": "681b82c541b08dcf4b708420"},
+          "name": "Coder Man",
+          "amount": 1666.67,
+          "paymentStatus": "Pending"
+        }
+      ],
+      "isSettled": { "confirm": false, "paymentMode": "" },
+      "isRequestedMoney": false,
+      "created_at": {"$date": "2025-05-30T17:43:03.403Z"},
+      "updated_at": {"$date": "2025-05-30T17:43:03.403Z"}
+    },
+    {
+      "expense_id": {"$oid": "6839f037685b1056a21fc0ec"},
+      "name": "table",
+      "category": "Other",
+      "subCategory": "Wooden",
+      "description": "ascdsvfdfsa",
+      "amount": 4000,
+      "splitType": "group",
+      "splitMethod": "percentage",
+      "splitDetails": [
+        {
+          "user_id": {"$oid": "68262d4bad3a516217e2815a"},
+          "name": "Tushar Sharma",
+          "percentage": 20,
+          "amount": 800,
+          "paymentStatus": "Pending"
+        },
+        {
+          "user_id": {"$oid": "681b82c541b08dcf4b708420"},
+          "name": "Coder Man",
+          "percentage": 30,
+          "amount": 1200,
+          "paymentStatus": "Pending"
+        }
+      ],
+      "isSettled": { "confirm": false, "paymentMode": "" },
+      "isRequestedMoney": false,
+      "created_at": {"$date": "2025-05-30T18:01:52.885Z"},
+      "updated_at": {"$date": "2025-05-30T18:01:52.885Z"},
+      "paidBy": {
+        "user_id": {"$oid": "6836037fa5b0518ea44a5283"},
+        "name": "John Doe"
+      }
+    },
+    {
+      "expense_id": {"$oid": "6840f137abc1056a21fc0ed0"},
+      "name": "Movie Night",
+      "category": "Entertainment",
+      "subCategory": "Cinema",
+      "description": "Watched a movie",
+      "amount": 1200,
+      "splitType": "group",
+      "splitMethod": "equal",
+      "splitDetails": [
+        {
+          "user_id": {"$oid": "6836037fa5b0518ea44a5283"},
+          "name": "John Doe",
+          "amount": 400,
+          "paymentStatus": "Paid"
+        },
+        {
+          "user_id": {"$oid": "68262d4bad3a516217e2815a"},
+          "name": "Tushar Sharma",
+          "amount": 400,
+          "paymentStatus": "Pending"
+        }
+      ],
+      "paidBy": {
+        "user_id": {"$oid": "681b82c541b08dcf4b708420"},
+        "name": "Coder Man"
+      },
+      "created_at": {"$date": "2025-04-15T14:20:00.000Z"},
+      "updated_at": {"$date": "2025-04-15T14:20:00.000Z"}
+    },
+    {
+      "expense_id": {"$oid": "6840f237ccc1056a21fc0ee0"},
+      "name": "Cab Ride",
+      "category": "Transport",
+      "subCategory": "Taxi",
+      "description": "Ride to airport",
+      "amount": 1500,
+      "splitType": "group",
+      "splitMethod": "equal",
+      "splitDetails": [
+        {
+          "user_id": {"$oid": "6836037fa5b0518ea44a5283"},
+          "name": "John Doe",
+          "amount": 500,
+          "paymentStatus": "Pending"
+        },
+        {
+          "user_id": {"$oid": "681b82c541b08dcf4b708420"},
+          "name": "Coder Man",
+          "amount": 500,
+          "paymentStatus": "Paid"
+        }
+      ],
+      "paidBy": {
+        "user_id": {"$oid": "68262d4bad3a516217e2815a"},
+        "name": "Tushar Sharma"
+      },
+      "created_at": {"$date": "2024-12-10T10:30:00.000Z"},
+      "updated_at": {"$date": "2024-12-10T10:30:00.000Z"}
+    },
+    {
+      "expense_id": {"$oid": "6840f247ddd1056a21fc0ef0"},
+      "name": "Groceries",
+      "category": "Food",
+      "subCategory": "Daily Needs",
+      "description": "Weekly stock",
+      "amount": 3000,
+      "splitType": "group",
+      "splitMethod": "equal",
+      "splitDetails": [
+        {
+          "user_id": {"$oid": "68262d4bad3a516217e2815a"},
+          "name": "Tushar Sharma",
+          "amount": 1000,
+          "paymentStatus": "Pending"
+        },
+        {
+          "user_id": {"$oid": "6836037fa5b0518ea44a5283"},
+          "name": "John Doe",
+          "amount": 1000,
+          "paymentStatus": "Paid"
+        }
+      ],
+      "paidBy": {
+        "user_id": {"$oid": "681b82c541b08dcf4b708420"},
+        "name": "Coder Man"
+      },
+      "created_at": {"$date": "2023-11-22T09:15:00.000Z"},
+      "updated_at": {"$date": "2023-11-22T09:15:00.000Z"}
+    }
+  ]
+}
